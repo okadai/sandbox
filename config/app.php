@@ -1,18 +1,17 @@
 <?php
-
 return [
-
+    
     /*
-    |--------------------------------------------------------------------------
-    | Application Environment
-    |--------------------------------------------------------------------------
-    |
-    | This value determines the "environment" your application is currently
-    | running in. This may determine how you prefer to configure various
-    | services your application utilizes. Set this in your ".env" file.
-    |
-    */
-
+     * |--------------------------------------------------------------------------
+     * | Application Environment
+     * |--------------------------------------------------------------------------
+     * |
+     * | This value determines the "environment" your application is currently
+     * | running in. This may determine how you prefer to configure various
+     * | services your application utilizes. Set this in your ".env" file.
+     * |
+     */
+    
     'env' => env('APP_ENV', 'production'),
 
     /*
@@ -52,7 +51,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Tokyo',
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +64,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ja',
 
     /*
     |--------------------------------------------------------------------------
@@ -92,7 +91,7 @@ return [
     */
 
     'key' => env('APP_KEY'),
-
+    
     'cipher' => 'AES-256-CBC',
 
     /*
@@ -109,7 +108,7 @@ return [
     */
 
     'log' => env('APP_LOG', 'single'),
-
+    
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
     /*
@@ -124,7 +123,7 @@ return [
     */
 
     'providers' => [
-
+        
         /*
          * Laravel Framework Service Providers...
          */
@@ -156,9 +155,9 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-
-    ],
+        App\Providers\RouteServiceProvider::class
+    ]
+    ,
 
     /*
     |--------------------------------------------------------------------------
@@ -172,7 +171,7 @@ return [
     */
 
     'aliases' => [
-
+        
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
@@ -202,8 +201,8 @@ return [
         'Storage' => Illuminate\Support\Facades\Storage::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class,
-
-    ],
-
-];
+        'View' => Illuminate\Support\Facades\View::class
+    ]
+    
+]
+;
